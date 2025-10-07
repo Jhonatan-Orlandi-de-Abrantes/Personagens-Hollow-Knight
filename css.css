@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+
+body {
+    font-family: 'Cinzel', serif;
+    font-size: 2.5em;
+    margin: 20px;
+    background: #f9f9f9;
+    color: #222;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    max-width: 900px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px; /* altura fixa para o header */
+    background-color: rgba(10, 10, 20, 0.95);
+    display: flex;
+    justify-content: center; /* centraliza horizontalmente o conteúdo */
+    align-items: center; /* centraliza verticalmente */
+    padding: 0 20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.7);
+    z-index: 1000; /* fica sobre os outros elementos */
+    box-sizing: border-box;
+    border-radius: 0 0 12px 12px;
+}
+
+header img {
+    height: 50px;
+    width: auto;
+    margin: 0; /* remove margem para ficar exatamente no centro */
+}
+
+header h1 {
+    font-family: 'Cinzel', serif;
+    font-size: 1.8rem;
+    color: #f0e9d2;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.text {
+    flex: 1;
+}
+
+.text h2 {
+    margin-top: 0;
+    font-family: 'Cinzel', serif;
+    font-size: 2rem;
+    color: #5a2e0c;
+}
+
+.text p {
+    line-height: 1.5;
+    margin-bottom: 1em;
+}
+
+.text ul {
+    padding-left: 20px;
+    margin-bottom: 1em;
+}
+
+.image {
+    flex-shrink: 0;
+    width: 250px;
+}
+
+.image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    background: #eee;
+}
+
+.infobox {
+  width: 300px;
+  background-color: #ffffff;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.infobox-header {
+  background-color: #2d2d2d;
+  color: #fff;
+  padding: 10px 15px;
+  font-size: 22px;
+  font-weight: bold;
+  font-family: 'Cinzel', serif;
+}
+
+.infobox img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.infobox-body {
+  padding: 15px;
+  font-size: 14px;
+  text-align: left;
+}
+
+.infobox-body strong {
+  display: inline-block;
+  width: 90px;
+  color: #333;
+}
+
+@media (max-width: 600px) {
+    .container {
+    flex-direction: column-reverse;
+    text-align: center;
+    }
+
+    .image {
+        width: 60%;
+        margin: 0 auto 20px;
+    }
+}
+
+body {
+  margin: 0; /* remove margem para ocupar toda tela */
+  padding: 0;
+  background-color: #2e2a4a; /* cor escura baseada na imagem */
+  background-image: url('https://wallpapercave.com/wp/wp3116852.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  color: #eee; /* texto claro para contraste */
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem; /* reduz tamanho geral para melhor leitura */
+}
+
+main {
+  background-color: rgba(15, 15, 30, 0.85);
+  max-width: 900px;
+  width: 90%;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.8);
+  box-sizing: border-box;
+  color: #ddd;
+  font-size: 1.2rem;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Cinzel', serif;
+  margin-bottom: 30px;
+  color: #f0e9d2;
+}
+
+/* Layout horizontal da seção options */
+.options {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+  flex-wrap: wrap; /* para responsividade */
+}
+
+/* Texto do Knight */
+.knight {
+  flex: 1 1 400px;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Imagem */
+.image {
+  flex: 0 0 250px;
+}
+
+.image img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.7);
+  display: block;
+  margin: 0 auto;
+}
+
+.characters-list {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.character-card {
+  position: relative;
+  width: 200px;
+  height: 300px;
+  border-radius: 12px;
+  overflow: hidden;
+  text-decoration: none;
+  color: #fff;
+  font-family: 'Cinzel', serif;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.character-card img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+  transition: opacity 0.3s ease;
+}
+
+.character-card h3 {
+  z-index: 2;
+  margin: 0;
+  padding: 15px;
+  width: 100%;
+  background: rgba(10, 10, 20, 0.7);
+  text-align: center;
+  font-size: 1.2rem;
+  box-sizing: border-box;
+}
+
+.character-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.3);
+}
+
+/* Responsividade para telas pequenas */
+@media (max-width: 600px) {
+  main {
+    padding: 20px;
+  }
+
+  .options {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .knight, .image {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .image {
+    margin-top: 20px;
+  }
+}
+
+.character-layout {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+/* Texto à esquerda */
+.character-text {
+  flex: 1 1 50%;
+  font-size: 1.2rem;
+  color: #eee;
+}
+
+.character-text h1 {
+  font-size: 2rem;
+  color: #f0e9d2;
+  margin-bottom: 15px;
+}
+
+.character-text p {
+  line-height: 1.6;
+  margin-bottom: 1em;
+}
+
+/* Infobox à direita com fundo igual ao <main> */
+.infobox {
+  flex: 0 0 300px;
+  background-color: rgba(15, 15, 30, 0.85); /* igual ao main */
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.6);
+  overflow: hidden;
+  text-align: center;
+  font-family: 'Cinzel', serif;
+  color: #eee;
+}
+
+.infobox-header {
+  background-color: rgba(10, 10, 20, 0.95);
+  color: #fff;
+  padding: 12px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.infobox img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.infobox-body {
+  padding: 15px;
+  font-size: 1rem;
+  text-align: left;
+  color: #ccc;
+}
+
+.infobox-body strong {
+  display: inline-block;
+  width: 90px;
+  color: #eee;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+  .character-layout {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .character-text, .infobox {
+    width: 100%;
+    max-width: 600px;
+  }
+
+  .character-text {
+    text-align: center;
+  }
+
+  .infobox {
+    margin-top: 30px;
+  }
+}
+
+.back-button {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 12px 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 2px solid #f0e9d2;
+  color: #f0e9d2;
+  font-family: 'Cinzel', serif;
+  font-size: 1rem;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.back-button:hover {
+  background-color: #f0e9d2;
+  color: #1a1a2e;
+}
